@@ -5,7 +5,7 @@ import ckan.plugins.toolkit as toolkit
 
 
 class WprdcpilotPlugin(plugins.SingletonPlugin):
-    plugins.implements(plugins.IFacets)
+    plugins.implements(plugins.IFacets, inherit=True)
 
     def dataset_facets(self, facets_dict, package_type):
 
